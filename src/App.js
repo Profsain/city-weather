@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Grid from '@mui/material/Grid';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container spacing={2}>
+      <Grid item xs={12} sm={4}>
+        This is todays weather information
+        This is todays weather information
+        This is todays weather information
+        This is todays weather information
+      </Grid>
+      <Grid item xs={12} sm={8}>
+        This is the largest section of the weather app This is the largest section of the weather app 
+        This is the largest section of the weather app This is the largest section of the weather app 
+        This is the largest section of the weather app This is the largest section of the weather app 
+      </Grid>
+    </Grid>
   );
 }
 
