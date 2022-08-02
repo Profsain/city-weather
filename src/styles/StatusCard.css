@@ -1,0 +1,19 @@
+.StatusCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e213a;
+  width: 320px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.Record {
+  margin-top: -20px;
+  font-size: 38px;
+}
+
+.Record span {
+  font-size: 18px;
+}
