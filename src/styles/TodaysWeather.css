@@ -1,0 +1,38 @@
+.Container {
+  background-color: #1e213a;
+  color: #fff;
+}
+
+.Top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+}
+
+.Top Button {
+  background-color: #6e707a;
+}
+
+.Middle {
+  width: 100%;
+  text-align: center;
+}
+
+.Bottom {
+  text-align: center;
+  width: 100%;
+}
+
+.degree {
+  font-size: 48px;
+}
+
+.degree span {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.Title {
+  font-size: 24px;
+}
