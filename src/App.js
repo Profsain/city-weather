@@ -15,16 +15,14 @@ const App = () => {
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position)
       setLat(position.coords.latitude);
       setLong(position.coords.longitude);
-    });
+    }); 
 
     dispatch(fetchWeatherApi(lat, long));
   }, [lat, long])
-
-  console.log('Lantitude=', lat)
-  console.log('Longitude=', long)
+  console.log(lat)
+  console.log(long)
   return (
     <div className="App">
       <Grid container>
