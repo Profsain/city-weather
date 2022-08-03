@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux/es/exports';
+import fetchWeatherApi from './redux/fetchWeatherApi';
 import Grid from '@mui/material/Grid';
 import TodaysWeather from './components/TodaysWeather';
 import WeatherCard from './components/WeatherCard';
@@ -7,6 +9,21 @@ import './styles/App.css';
 
 
 const App = () => {
+  const dispatch = useDispatch();
+  const [lat, setLat] = useState(0);
+  const [long, setLong] = useState(0);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLat(position.coords.latitude);
+      setLong(position.coords.longitude);
+    });
+
+    dispatch(fetchWeatherApi(lat, long));
+  }, [lat, long])
+
+  console.log('Lantitude = ', lat)
+  console.log('Longitude = ', long)
   return (
     <div className="App">
       <Grid container>
