@@ -4,16 +4,18 @@ import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import moment from 'moment';
+import setWeatherIcon from '../redux/setWeatherIcons';
 import '../styles/TodaysWeather.css';
 
 const TodaysWeather = () => {
   const weatherData = useSelector((state) => state.weather.weatherData);
-  console.log(weatherData)
   const weatherCondition = weatherData.weather[0].main;
   const currentTemp = weatherData.main.temp;
   const currentCity = weatherData.name;
   const country = weatherData.sys.country;
   const date = moment().format('dddd Do MMMM YYYY');
+  const weatherIcon = setWeatherIcon(weatherCondition);
+  console.log(weatherIcon)
 
   return (
     <Grid
@@ -30,7 +32,7 @@ const TodaysWeather = () => {
         <WbSunnyIcon />
       </Grid>
       <Grid item xs={6} className="Middle">
-        <img src="shower.png" alt="wheather-today" className="WeatherIcon"/>
+        <img src={weatherIcon} alt="wheather-today" className="WeatherIcon"/>
       </Grid>
       <Grid item xs={4} className="Bottom">
         <h4 className="degree">{currentTemp}℃</h4>
