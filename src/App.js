@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux/es/exports';
 import fetchWeatherApi from './redux/fetchWeatherApi';
 import Grid from '@mui/material/Grid';
 import TodaysWeather from './components/TodaysWeather';
@@ -22,8 +22,8 @@ const App = () => {
     dispatch(fetchWeatherApi(lat, long));
   }, [lat, long])
 
-  console.log('Lantitude = ', lat)
-  console.log('Longitude = ', long)
+  console.log('Lantitude=', lat)
+  console.log('Longitude=', long)
   return (
     <div className="App">
       <Grid container>

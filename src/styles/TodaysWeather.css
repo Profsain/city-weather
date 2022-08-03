@@ -1,7 +1,7 @@
 .Container {
   background-color: #1e213a;
   color: #fff;
-  padding-bottom: 48px;
+  padding-bottom: 148px;
 }
 
 .Top {
@@ -36,4 +36,8 @@
 
 .Title {
   font-size: 24px;
+}
+
+.WeatherIcon {
+  width: 150px;
 }
