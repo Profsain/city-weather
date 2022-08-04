@@ -1,4 +1,4 @@
-# Ask-Weather App
+# City-Weather App
 A react-redux web app that help users to search for weather condition of any city, view location & date, view wind status & wind direction, view humidity, air pressure, view weather condition of the next 5 days, and convert from degree Celsius to Fahrenheit or vice visa
 
 ### Live Demo

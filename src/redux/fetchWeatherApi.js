@@ -2,7 +2,7 @@ import {
   fetchDataBegin,
   fetchDataSuccess,
   fetchDataError,
-} from "./weatherreducers";
+} from './weatherreducers';
 
 const fetchWeatherApi = (lat, long) => {
   const API_KEY = '53d42d9bf65c6578b579fb53c78b3712';

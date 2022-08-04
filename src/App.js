@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux/es/exports';
+import Grid from '@mui/material/Grid';
 import fetchWeatherApi from './redux/fetchWeatherApi';
 import fetchNextFiveApi from './redux/fetchNextFive';
-import Grid from '@mui/material/Grid';
 import TodaysWeather from './components/TodaysWeather';
 import WeatherCard from './components/WeatherCard';
 import WeatherStatus from './components/WeatherStatus';
 import './styles/App.css';
-
 
 const App = () => {
   const dispatch = useDispatch();
@@ -24,7 +23,7 @@ const App = () => {
           <TodaysWeather />
         </Grid>
         <Grid item xs={12} sm={8} container direction="row">
-          <Grid item xs={0} sm={1}></Grid>
+          <Grid item xs={0} sm={1} />
           <Grid
             item
             xs={12}
@@ -41,7 +40,7 @@ const App = () => {
               <WeatherStatus />
             </Grid>
           </Grid>
-          <Grid item xs={0} sm={1}></Grid>
+          <Grid item xs={0} sm={1} />
         </Grid>
       </Grid>
     </div>

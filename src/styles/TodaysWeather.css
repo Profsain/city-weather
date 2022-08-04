@@ -11,10 +11,6 @@
   padding: 18px;
 }
 
-.Top Button {
-  background-color: #6e707a;
-}
-
 .Middle {
   width: 100%;
   text-align: center;
@@ -58,6 +54,7 @@
   padding: 4px;
   border: none;
   border-radius: 4px;
+  background-color: #6e707a;
   color: #fff;
   font-weight: 600;
 }
