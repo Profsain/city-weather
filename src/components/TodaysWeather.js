@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import moment from 'moment';
 import fetchByCity from '../redux/fetchByCityName';
 import fetchNextFiveApi from '../redux/fetchNextFive';
 import { Grid } from '@mui/material';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import TextField from '@mui/material/TextField';
-import moment from 'moment';
 import setWeatherIcon from '../helper/setWeatherIcons';
 import '../styles/TodaysWeather.css';
 
@@ -18,18 +18,18 @@ const TodaysWeather = () => {
   const country = weatherData.sys.country;
   const date = moment().format('dddd Do MMMM YYYY');
   const weatherIcon = setWeatherIcon(weatherCondition);
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState('');
 
   const onChangeHandler = (e) => {
     setCity(e.target.value);
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(fetchByCity(city));
     dispatch(fetchNextFiveApi(city));
-    setCity("");
-  }
+    setCity('');
+  };
 
   return (
     <Grid
@@ -49,7 +49,7 @@ const TodaysWeather = () => {
             value={city}
             onChange={onChangeHandler}
           />
-          <button onClick={handleSubmit}>Search</button>
+          <button onClick={handleSubmit} type="button">Search</button>
         </div>
         <WbSunnyIcon />
       </Grid>
@@ -57,10 +57,19 @@ const TodaysWeather = () => {
         <img src={weatherIcon} alt="wheather-today" className="WeatherIcon" />
       </Grid>
       <Grid item xs={4} className="Bottom">
-        <h4 className="degree">{currentTemp}℃</h4>
-        <p className="Title">{weatherCondition}</p>
-        <p>Today - {date}</p>
-        <p>{currentCity} {country}</p>
+        <h4 className="degree">
+          {currentTemp}℃
+        </h4>
+        <p className="Title">
+          {weatherCondition}
+        </p>
+        <p>Today -
+          {date}
+        </p>
+        <p>
+          {currentCity}
+          -{country}
+        </p>
       </Grid>
     </Grid>
   );

@@ -12,41 +12,40 @@ const WeatherStatus = () => {
   const pressure = weatherData.main.pressure;
   return (
     <div className="WeatherStatus">
-      <h2>Today's Highlight</h2>
+      <h2>Today&apos;s Highlight</h2>
       <Grid
         container
         gap={6}
         direction="row"
         justifyContent="center"
         alignItems="center"
-
       >
         <Grid item xs={12} md={5}>
           <StatusCards
-            title= "Wind Status"
+            title="Wind Status"
             measure={wind}
-            unit= "mph"
+            unit="mph"
           />
         </Grid>
         <Grid item xs={12} md={5}>
-        <StatusCards
-            title= "Humidity"
+          <StatusCards
+            title="Humidity"
             measure={humidity}
-            unit= "%"
+            unit="%"
           />
         </Grid>
         <Grid item xs={12} md={5}>
-        <StatusCards
-            title= "Visibility"
+          <StatusCards
+            title="Visibility"
             measure={visibility}
-            unit= "miles"
+            unit="miles"
           />
         </Grid>
         <Grid item xs={12} md={5}>
-        <StatusCards
-            title= "Air Pressure"
+          <StatusCards
+            title="Air Pressure"
             measure={pressure}
-            unit= "mb"
+            unit="mb"
           />
         </Grid>
       </Grid>

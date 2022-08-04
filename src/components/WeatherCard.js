@@ -17,9 +17,10 @@ const WeatherCard = () => {
         justifyContent="center"
         alignItems="center"
       >
-        {nextFiveData.list.map((weather) => (
+        {nextFiveData.list.map((weather, key) => (
           <Grid item xs={4} sm={2}>
             <SingleCard
+              key={key}
               condition={weather.weather[0].main}
               temp={weather.main.temp}
               humidity={weather.main.humidity}
@@ -30,7 +31,7 @@ const WeatherCard = () => {
         ))}
       </Grid>
     </div>
-  )
+  );
 };
 
 export default WeatherCard;
