@@ -26,6 +26,6 @@ const setWeatherIcon = (condition) => {
       icon = 'icons/LightCloud.png';
   }
   return icon;
-}
+};
 
 export default setWeatherIcon;

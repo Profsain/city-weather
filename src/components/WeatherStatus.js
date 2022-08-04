@@ -7,9 +7,9 @@ import '../styles/WeatherStatus.css';
 const WeatherStatus = () => {
   const weatherData = useSelector((state) => state.weather.weatherData);
   const wind = weatherData.wind.speed;
-  const humidity = weatherData.main.humidity;
-  const visibility = weatherData.visibility;
-  const pressure = weatherData.main.pressure;
+  const humidit = weatherData.main.humidity;
+  const visibilit = weatherData.visibility;
+  const pressur = weatherData.main.pressure;
   return (
     <div className="WeatherStatus">
       <h2>Today&apos;s Highlight</h2>
@@ -30,27 +30,27 @@ const WeatherStatus = () => {
         <Grid item xs={12} md={5}>
           <StatusCards
             title="Humidity"
-            measure={humidity}
+            measure={humidit}
             unit="%"
           />
         </Grid>
         <Grid item xs={12} md={5}>
           <StatusCards
             title="Visibility"
-            measure={visibility}
+            measure={visibilit}
             unit="miles"
           />
         </Grid>
         <Grid item xs={12} md={5}>
           <StatusCards
             title="Air Pressure"
-            measure={pressure}
+            measure={pressur}
             unit="mb"
           />
         </Grid>
       </Grid>
     </div>
-  )
+  );
 };
 
 export default WeatherStatus;

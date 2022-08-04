@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 import React from 'react';
 import '../styles/StatusCard.css';
 
@@ -16,6 +16,6 @@ StatusCards.propTypes = {
   measure: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   unit: PropTypes.string.isRequired,
-}
+};
 
 export default StatusCards;

@@ -17,10 +17,9 @@ const WeatherCard = () => {
         justifyContent="center"
         alignItems="center"
       >
-        {nextFiveData.list.map((weather, key) => (
-          <Grid item xs={4} sm={2}>
+        {nextFiveData.list.map((weather) => (
+          <Grid item xs={4} sm={2} key={weather.weather.id}>
             <SingleCard
-              key={key}
               condition={weather.weather[0].main}
               temp={weather.main.temp}
               humidity={weather.main.humidity}

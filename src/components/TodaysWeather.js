@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import moment from 'moment';
-import fetchByCity from '../redux/fetchByCityName';
-import fetchNextFiveApi from '../redux/fetchNextFive';
 import { Grid } from '@mui/material';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import TextField from '@mui/material/TextField';
+import fetchByCity from '../redux/fetchByCityName';
+import fetchNextFiveApi from '../redux/fetchNextFive';
 import setWeatherIcon from '../helper/setWeatherIcons';
 import '../styles/TodaysWeather.css';
 
@@ -15,7 +15,7 @@ const TodaysWeather = () => {
   const weatherCondition = weatherData.weather[0].main;
   const currentTemp = weatherData.main.temp;
   const currentCity = weatherData.name;
-  const country = weatherData.sys.country;
+  const count = weatherData.sys.country;
   const date = moment().format('dddd Do MMMM YYYY');
   const weatherIcon = setWeatherIcon(weatherCondition);
   const [city, setCity] = useState('');
@@ -58,17 +58,20 @@ const TodaysWeather = () => {
       </Grid>
       <Grid item xs={4} className="Bottom">
         <h4 className="degree">
-          {currentTemp}℃
+          {currentTemp}
+          ℃
         </h4>
         <p className="Title">
           {weatherCondition}
         </p>
-        <p>Today -
+        <p>
+          Today -
           {date}
         </p>
         <p>
           {currentCity}
-          -{country}
+          -
+          {count}
         </p>
       </Grid>
     </Grid>

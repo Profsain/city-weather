@@ -15,14 +15,14 @@ const App = () => {
 
   useEffect(() => {
     if (navigator.geolocation)
-    navigator.geolocation.getCurrentPosition((position) => {
-      setLat(position.coords.latitude);
-      setLong(position.coords.longitude);
-    });
+      navigator.geolocation.getCurrentPosition((position) => {
+        setLat(position.coords.latitude);
+        setLong(position.coords.longitude);
+      });
 
   }, [lat, long]);
   dispatch(fetchWeatherApi(lat, long));
-  dispatch(fetchNextFiveApi("Abuja"));
+  dispatch(fetchNextFiveApi('Abuja'));
 
   return (
     <div className="App">
