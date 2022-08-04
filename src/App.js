@@ -14,17 +14,15 @@ const App = () => {
   const [lat, setLat] = useState(9.0765);
   const [long, setLong] = useState(7.3986);
 
-  // useEffect(() => {
-  //   navigator.geolocation.getCurrentPosition((position) => {
-  //     setLat(position.coords.latitude);
-  //     setLong(position.coords.longitude);
-  //   });
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLat(position.coords.latitude);
+      setLong(position.coords.longitude);
+    });
 
-  // }, [lat, long]);
+  }, [lat, long]);
   dispatch(fetchWeatherApi(lat, long));
   dispatch(fetchNextFiveApi("Abuja"));
-  console.log('Latitude ', lat)
-  console.log('Longitude', long)
 
   return (
     <div className="App">
@@ -55,6 +53,6 @@ const App = () => {
       </Grid>
     </div>
   );
-}
+};
 
 export default App;
