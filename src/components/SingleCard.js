@@ -6,7 +6,7 @@ const SingleCard = ({
   temp,
   humidity,
   condition,
-  icon 
+  icon,
 }) => (
 
   <div className="Card">

@@ -14,10 +14,10 @@ const App = () => {
   const [long, setLong] = useState(7.3986);
 
   useEffect(() => {
-      navigator.geolocation.getCurrentPosition((position) => {
-        setLat(position.coords.latitude);
-        setLong(position.coords.longitude);
-      });
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLat(position.coords.latitude);
+      setLong(position.coords.longitude);
+    });
   }, [lat, long]);
   dispatch(fetchWeatherApi(lat, long));
   dispatch(fetchNextFiveApi('Abuja'));
