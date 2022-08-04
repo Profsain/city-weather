@@ -6,7 +6,6 @@ import '../styles/WeatherStatus.css';
 
 const WeatherStatus = () => {
   const weatherData = useSelector((state) => state.weather.weatherData);
-  console.log(weatherData)
   const wind = weatherData.wind.speed;
   const humidity = weatherData.main.humidity;
   const visibility = weatherData.visibility;
@@ -24,28 +23,28 @@ const WeatherStatus = () => {
       >
         <Grid item xs={12} md={5}>
           <StatusCards
-            tittle= "Wind Status"
+            title= "Wind Status"
             measure={wind}
             unit= "mph"
           />
         </Grid>
         <Grid item xs={12} md={5}>
         <StatusCards
-            tittle= "Humidity"
+            title= "Humidity"
             measure={humidity}
             unit= "%"
           />
         </Grid>
         <Grid item xs={12} md={5}>
         <StatusCards
-            tittle= "Visibility"
+            title= "Visibility"
             measure={visibility}
             unit= "miles"
           />
         </Grid>
         <Grid item xs={12} md={5}>
         <StatusCards
-            tittle= "Air Pressure"
+            title= "Air Pressure"
             measure={pressure}
             unit= "mb"
           />
@@ -53,6 +52,6 @@ const WeatherStatus = () => {
       </Grid>
     </div>
   )
-}
+};
 
-export default WeatherStatus
+export default WeatherStatus;

@@ -7,6 +7,6 @@ const PageError = () => {
       <img src="shower.png" alt="show icons" />
     </div>
   )
-}
+};
 
 export default PageError;

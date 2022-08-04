@@ -1,17 +1,17 @@
 import React from 'react';
 import '../styles/SingleCard.css';
 
-const SingleCard = () => {
+const SingleCard = ({ temp, humidity, condition, icon}) => {
   return (
     <div className="Card">
-      <h4>Today</h4>
-      <img src="shower.png" alt="weather icon"/>
+      <h4>{condition}</h4>
+      <img src={icon} alt="weather icon"/>
       <div className="Report">
-        <p>16℃</p>
-        <p>11℃</p>
+        <p>{temp}℃</p>
+        <p>{humidity}%</p>
       </div>
     </div>
   )
-}
+};
 
-export default SingleCard
+export default SingleCard;

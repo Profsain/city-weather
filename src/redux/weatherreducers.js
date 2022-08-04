@@ -1,10 +1,13 @@
 const FETCH_WEATHER_DATA_BEGIN = 'FETCH_WEATHER_DATA_BEGIN';
 const FETCH_WEATHER_DATA_SUCCESS = 'FETCH_WEATHER_DATA_SUCCESS';
 const FETCH_WEATHER_DATA_ERROR = 'FETCH_WEATHER_DATA_BEGIN_ERROR';
+const FETCH_NEXT_FIVE_DAYS = "FETCH_NEXT_FIVE_DAYS";
+const FETCH_BY_CITY_NAME   = "FETCH_BY_CITY_NAME";
 
 // initial state
 const store = {
   weatherData: [],
+  nextFiveDaysData: [],
   loading: false,
   error: null,
 }
@@ -29,7 +32,18 @@ const weatherReducers = (state = store, action) => {
         ...state,
         loading: false,
         error: action.payload.error,
-      }
+      };
+    case FETCH_NEXT_FIVE_DAYS:
+      return {
+        ...state,
+        nextFiveDaysData: action.payload.fiveDaysData,
+        loading: false,
+      };
+    case FETCH_BY_CITY_NAME:
+      return {
+        ...state,
+        weatherData: action.payload.cityWeatherObj,
+      };
     default:
       return state;
   };
@@ -48,6 +62,16 @@ export const fetchDataSuccess = (weatherObj) => ({
 export const fetchDataError = (error) => ({
   type: FETCH_WEATHER_DATA_ERROR,
   payload: error,
+});
+
+export const fetchNextFiveDays = (fiveDaysData) => ({
+  type: FETCH_NEXT_FIVE_DAYS,
+  payload: {fiveDaysData},
+});
+
+export const fetchByCityName = (cityWeatherObj) => ({
+  type: FETCH_BY_CITY_NAME,
+  payload: {cityWeatherObj},
 });
 
 export default weatherReducers;
