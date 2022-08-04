@@ -1,0 +1,67 @@
+.Container {
+  background-color: #1e213a;
+  color: #fff;
+  padding-bottom: 148px;
+}
+
+.Top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+}
+
+.Middle {
+  width: 100%;
+  text-align: center;
+}
+
+.Bottom {
+  text-align: center;
+  width: 100%;
+}
+
+.degree {
+  font-size: 48px;
+}
+
+.degree span {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.Title {
+  font-size: 24px;
+}
+
+.WeatherIcon {
+  width: 150px;
+}
+
+.Search {
+  background-color: #d7d7d7;
+  border-radius: 5px;
+}
+
+.Search-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.Search-div button {
+  margin-top: 4px;
+  font-size: 14px;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6e707a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.Search-div button:hover {
+  cursor: pointer;
+  color: #6e707a;
+  background-color: #1e213a;
+  border: 1px solid #fff;
+}
