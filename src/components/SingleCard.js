@@ -2,7 +2,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import '../styles/SingleCard.css';
 
-const SingleCard = ({ temp, humidity, condition, icon }) => (
+const SingleCard = ({
+  temp,
+  humidity,
+  condition,
+  icon 
+}) => (
 
   <div className="Card">
     <h4>{condition}</h4>
