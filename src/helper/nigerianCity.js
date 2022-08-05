@@ -1,4 +1,4 @@
-export const nigerianCity = [
+const nigerianCity = [
   {
     id: 123,
     name: 'Abuja',
@@ -60,3 +60,5 @@ export const nigerianCity = [
     image: 'citiesImages/Ph.jpg',
   },
 ];
+
+export default nigerianCity;

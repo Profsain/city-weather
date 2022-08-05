@@ -4,9 +4,9 @@ import { useDispatch } from 'react-redux/es/exports';
 import Grid from '@mui/material/Grid';
 import fetchNextFiveApi from '../redux/fetchNextFive';
 import fetchByCity from '../redux/fetchByCityName';
-import TodaysWeather from './components/TodaysWeather';
-import WeatherCard from './components/WeatherCard';
-import WeatherStatus from './components/WeatherStatus';
+import TodaysWeather from './TodaysWeather';
+import WeatherCard from './WeatherCard';
+import WeatherStatus from './WeatherStatus';
 import '../styles/WeatherDetails.css';
 
 const WeatherDetails = () => {
