@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom";
 import moment from 'moment';
 import { Grid } from '@mui/material';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import TextField from '@mui/material/TextField';
 import fetchByCity from '../redux/fetchByCityName';
 import fetchNextFiveApi from '../redux/fetchNextFive';
@@ -19,6 +20,7 @@ const TodaysWeather = () => {
   const date = moment().format('dddd Do MMMM YYYY');
   const weatherIcon = setWeatherIcon(weatherCondition);
   const [city, setCity] = useState('');
+  const navigate = useNavigate();
 
   const onChangeHandler = (e) => {
     setCity(e.target.value);
@@ -30,6 +32,10 @@ const TodaysWeather = () => {
     dispatch(fetchNextFiveApi(city));
     setCity('');
   };
+
+  const backToHome = () => {
+    navigate("/");
+  }
 
   return (
     <Grid
@@ -51,7 +57,10 @@ const TodaysWeather = () => {
           />
           <button onClick={handleSubmit} type="button">Search</button>
         </div>
-        <WbSunnyIcon />
+        <ArrowBackIcon
+          className="Back-home"
+          onClick={backToHome}
+        />
       </Grid>
       <Grid item xs={6} className="Middle">
         <img src={weatherIcon} alt="wheather-today" className="WeatherIcon" />

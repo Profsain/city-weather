@@ -65,3 +65,10 @@
   background-color: #1e213a;
   border: 1px solid #fff;
 }
+
+.Back-home:hover {
+  cursor: pointer;
+  background-color: #6e707a;
+  border-radius: 50%;
+  padding: 4px;
+}

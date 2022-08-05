@@ -12,3 +12,8 @@
   width: 180px;
   height: 150px;
 }
+
+.City-card:hover {
+  cursor: pointer;
+  border: 2px solid rgb(136, 136, 136);
+}
