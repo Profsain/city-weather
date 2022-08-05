@@ -1,0 +1,14 @@
+.City-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 18px;
+}
+
+.City-card img {
+  width: 180px;
+  height: 150px;
+}

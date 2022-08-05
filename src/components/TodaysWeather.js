@@ -12,10 +12,10 @@ import '../styles/TodaysWeather.css';
 const TodaysWeather = () => {
   const weatherData = useSelector((state) => state.weather.weatherData);
   const dispatch = useDispatch();
-  const weatherCondition = weatherData.weather[0].main;
-  const currentTemp = weatherData.main.temp;
-  const currentCity = weatherData.name;
-  const count = weatherData.sys.country;
+  const weatherCondition = weatherData?.weather?.[0]?.main || 'Internet Connect Error!';
+  const currentTemp = weatherData?.main?.temp || "0";
+  const currentCity = weatherData?.name || "City";
+  const count = weatherData?.sys?.country || "N";
   const date = moment().format('dddd Do MMMM YYYY');
   const weatherIcon = setWeatherIcon(weatherCondition);
   const [city, setCity] = useState('');
@@ -62,7 +62,7 @@ const TodaysWeather = () => {
           ℃
         </h4>
         <p className="Title">
-          {weatherCondition}
+          {weatherCondition || 'únknown'}
         </p>
         <p>
           Today -
