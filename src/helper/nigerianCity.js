@@ -1,4 +1,5 @@
-const nigerianCity = [
+/* eslint-disable */
+export const nigerianCity = [
   {
     id: 123,
     name: 'Abuja',
@@ -60,5 +61,3 @@ const nigerianCity = [
     image: 'citiesImages/Ph.jpg',
   },
 ];
-
-export default nigerianCity;
