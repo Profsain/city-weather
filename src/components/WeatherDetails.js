@@ -1,12 +1,12 @@
 import React from 'react';
-import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux/es/exports';
 import Grid from '@mui/material/Grid';
 import fetchNextFiveApi from '../redux/fetchNextFive';
 import fetchByCity from '../redux/fetchByCityName';
-import TodaysWeather from '../components/TodaysWeather';
-import WeatherCard from '../components/WeatherCard';
-import WeatherStatus from '../components/WeatherStatus';
+import TodaysWeather from './components/TodaysWeather';
+import WeatherCard from './components/WeatherCard';
+import WeatherStatus from './components/WeatherStatus';
 import '../styles/WeatherDetails.css';
 
 const WeatherDetails = () => {
@@ -43,7 +43,7 @@ const WeatherDetails = () => {
         </Grid>
       </Grid>
     </div>
-  )
+  );
 };
 
 export default WeatherDetails;

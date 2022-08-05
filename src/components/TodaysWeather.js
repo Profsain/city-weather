@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import moment from 'moment';
 import { Grid } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -14,9 +14,9 @@ const TodaysWeather = () => {
   const weatherData = useSelector((state) => state.weather.weatherData);
   const dispatch = useDispatch();
   const weatherCondition = weatherData?.weather?.[0]?.main || 'Internet Connect Error!';
-  const currentTemp = weatherData?.main?.temp || "0";
-  const currentCity = weatherData?.name || "City";
-  const count = weatherData?.sys?.country || "N";
+  const currentTemp = weatherData?.main?.temp || '0';
+  const currentCity = weatherData?.name || 'City';
+  const count = weatherData?.sys?.country || 'N';
   const date = moment().format('dddd Do MMMM YYYY');
   const weatherIcon = setWeatherIcon(weatherCondition);
   const [city, setCity] = useState('');
@@ -34,8 +34,8 @@ const TodaysWeather = () => {
   };
 
   const backToHome = () => {
-    navigate("/");
-  }
+    navigate('/');
+  };
 
   return (
     <Grid

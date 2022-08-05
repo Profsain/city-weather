@@ -13,11 +13,10 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={ <App />} />
-          <Route path="/weather" element={ <WeatherDetails />} />
+          <Route path="/" element={<App />} />
+          <Route path="/weather" element={<WeatherDetails />} />
         </Routes>
       </BrowserRouter>
-     
     </Provider>
   </React.StrictMode>,
 );
