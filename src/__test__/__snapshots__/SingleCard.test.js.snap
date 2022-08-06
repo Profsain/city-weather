@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders SingleCard component correctly 1`] = `
+<div
+  className="Card"
+>
+  <h4 />
+  <img
+    alt="weather icon"
+  />
+  <div
+    className="Report"
+  >
+    <p>
+      ℃
+    </p>
+    <p>
+      %
+    </p>
+  </div>
+</div>
+`;

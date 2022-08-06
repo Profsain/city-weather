@@ -1,0 +1,23 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e213a;
+  width: 140px;
+  font-size: 18px;
+}
+
+.Card img {
+  width: 80px;
+  height: 60px;
+}
+
+.Report {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Report p {
+  margin: 16px;
+}

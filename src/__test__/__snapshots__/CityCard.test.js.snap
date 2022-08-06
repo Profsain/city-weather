@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders CityCard component correctly 1`] = `
+<div
+  className="City-card"
+>
+  <img
+    alt="abuja city"
+  />
+  <h4 />
+</div>
+`;

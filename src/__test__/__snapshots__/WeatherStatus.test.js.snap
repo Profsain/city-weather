@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders WeatherStatus component correctly 1`] = `
+<div
+  className="WeatherStatus"
+>
+  <h2>
+    Today's Highlight
+  </h2>
+  <div
+    className="MuiGrid-root MuiGrid-container css-188hzqz-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 css-urj5pv-MuiGrid-root"
+    >
+      <div
+        className="StatusCard"
+      >
+        <h4
+          className="Title"
+        >
+          Wind Status
+        </h4>
+        <p
+          className="Record"
+        >
+          0
+          <span>
+            mph
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 css-urj5pv-MuiGrid-root"
+    >
+      <div
+        className="StatusCard"
+      >
+        <h4
+          className="Title"
+        >
+          Humidity
+        </h4>
+        <p
+          className="Record"
+        >
+          0
+          <span>
+            %
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 css-urj5pv-MuiGrid-root"
+    >
+      <div
+        className="StatusCard"
+      >
+        <h4
+          className="Title"
+        >
+          Visibility
+        </h4>
+        <p
+          className="Record"
+        >
+          0
+          <span>
+            miles
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5 css-urj5pv-MuiGrid-root"
+    >
+      <div
+        className="StatusCard"
+      >
+        <h4
+          className="Title"
+        >
+          Air Pressure
+        </h4>
+        <p
+          className="Record"
+        >
+          0
+          <span>
+            mb
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

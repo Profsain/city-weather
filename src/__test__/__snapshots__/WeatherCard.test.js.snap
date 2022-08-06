@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders WeatherCard component correctly 1`] = `
+<div
+  className="WeatherCard"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container css-15mc7ki-MuiGrid-root"
+  />
+</div>
+`;

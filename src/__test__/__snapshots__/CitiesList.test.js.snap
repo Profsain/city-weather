@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders CitiesList component correctly 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container Cities-container css-16wvrx1-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/abuja.jpg"
+      />
+      <h4>
+        Abuja
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/abia.jpg"
+      />
+      <h4>
+        Abia
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/Benin.jpg"
+      />
+      <h4>
+        Benin
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/enugu.jpg"
+      />
+      <h4>
+        Enugu
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/ibadan.jpg"
+      />
+      <h4>
+        Ibadan
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/ilorin.jpg"
+      />
+      <h4>
+        Ilorin
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/jos.jpg"
+      />
+      <h4>
+        Jos
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/kaduna.jpg"
+      />
+      <h4>
+        Kaduna
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/kano.jpg"
+      />
+      <h4>
+        Kano
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/lagos.jpg"
+      />
+      <h4>
+        Lagos
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/maiduguri.jpg"
+      />
+      <h4>
+        Maiduguri
+      </h4>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 css-63b4os-MuiGrid-root"
+    onClick={[Function]}
+  >
+    <div
+      className="City-card"
+    >
+      <img
+        alt="abuja city"
+        src="citiesImages/Ph.jpg"
+      />
+      <h4>
+        Port
+      </h4>
+    </div>
+  </div>
+</div>
+`;

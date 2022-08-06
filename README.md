@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# City-Weather App
+A react-redux web app that helps users to search for weather conditions of any city, view location & date, view wind status & wind direction, view humidity, and air pressure, view weather conditions of the next 5 days, and convert from degrees Celsius to Fahrenheit or vice visa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Live Demo
+[City-Weather App:](https://joyful-arithmetic-e662f9.netlify.app/)
 
-## Available Scripts
+[Video Demo:](https://www.loom.com/share/c23713d790e04c41b33e9dafc96933c6) 
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
+- React
+- Redux
+- JavaScript
+- Openweathermap API
+- HTML
+- CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Go to the repository page. 
+- Press the "Code" button and copy the link. 
+- Clone it using git command git clone.
+- cd into the cloned folder 
+- Run npm install to install all dependancies 
+- Open folder in your code editor 
+- Run npm start to open the project in localhost
 
-### `npm test`
+## Authors
+👤 **Husseini Mudi**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- GitHub: [@githubhandle](https://github.com/Profsain)
+- Twitter: [@twitterhandle](https://twitter.com/profsain)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/profsain)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Feel free to check the issues page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Show your support
+Give a ⭐️ if you like this project!
 
-### `npm run eject`
+Acknowledgments
+Hat tip to anyone whose code was used
+Microverse Community for their support
+[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the original design
+[www.devchallenge.io](https://devchallenges.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📝 License
+This project is [MIT](./MIT.md) licensed.

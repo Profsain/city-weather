@@ -1,0 +1,12 @@
+.WeatherStatus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 18px;
+  margin-left: 38px;
+}
+
+.WeatherStatus h2 {
+  padding: 6px 32px;
+}
