@@ -26,10 +26,10 @@ const SingleCard = ({
 );
 
 SingleCard.propTypes = {
-  condition: PropTypes.string,
-  humidity: PropTypes.number,
-  icon: PropTypes.string,
-  temp: PropTypes.number,
+  condition: PropTypes.string.isRequired,
+  humidity: PropTypes.number.isRequired,
+  icon: PropTypes.string.isRequired,
+  temp: PropTypes.number.isRequired,
 };
 
 export default SingleCard;

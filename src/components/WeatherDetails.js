@@ -15,7 +15,6 @@ const WeatherDetails = () => {
   const dispatch = useDispatch();
   dispatch(fetchByCity(cityName));
   dispatch(fetchNextFiveApi(cityName));
-  
   return (
     <div className="Detail-container">
       <Grid container>

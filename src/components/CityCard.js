@@ -10,8 +10,8 @@ const CityCard = ({ cityName, cityPic }) => (
 );
 
 CityCard.propTypes = {
-  cityName: PropTypes.string,
-  cityPic: PropTypes.string,
+  cityName: PropTypes.string.isRequired,
+  cityPic: PropTypes.string.isRequired,
 };
 
 export default CityCard;
