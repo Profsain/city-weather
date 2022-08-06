@@ -4,7 +4,7 @@ A react-redux web app that helps users to search for weather conditions of any c
 ### Live Demo
 [City-Weather App:](https://joyful-arithmetic-e662f9.netlify.app/)
 
-[Video Demo:](https://www.loom.com/share/0046e2bc7a3b4553b649f7dcd167f784) 
+[Video Demo:](https://www.loom.com/share/c23713d790e04c41b33e9dafc96933c6) 
 
 
 ## Built With
