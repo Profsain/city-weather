@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux';
 import Grid from '@mui/material/Grid';
 import fetchNextFiveApi from '../redux/fetchNextFive';
 import fetchByCity from '../redux/fetchByCityName';
@@ -15,6 +15,7 @@ const WeatherDetails = () => {
   const dispatch = useDispatch();
   dispatch(fetchByCity(cityName));
   dispatch(fetchNextFiveApi(cityName));
+  
   return (
     <div className="Detail-container">
       <Grid container>

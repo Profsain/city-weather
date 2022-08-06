@@ -1,5 +1,5 @@
 # City-Weather App
-A react-redux web app that help users to search for weather condition of any city, view location & date, view wind status & wind direction, view humidity, air pressure, view weather condition of the next 5 days, and convert from degree Celsius to Fahrenheit or vice visa
+A react-redux web app that helps users to search for weather conditions of any city, view location & date, view wind status & wind direction, view humidity, and air pressure, view weather conditions of the next 5 days, and convert from degrees Celsius to Fahrenheit or vice visa
 
 ### Live Demo
 [City-Weather App:](https://joyful-arithmetic-e662f9.netlify.app/)
@@ -45,6 +45,8 @@ Give a ⭐️ if you like this project!
 Acknowledgments
 Hat tip to anyone whose code was used
 Microverse Community for their support
-[www.devchallenge.io](https://devchallenges.io/) for the design inspiration
+[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the original design
+[www.devchallenge.io](https://devchallenges.io/)
+
 📝 License
 This project is [MIT](./MIT.md) licensed.

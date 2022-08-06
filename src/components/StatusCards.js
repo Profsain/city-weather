@@ -13,9 +13,9 @@ const StatusCards = ({ title, measure, unit }) => (
 );
 
 StatusCards.propTypes = {
-  measure: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  unit: PropTypes.string.isRequired,
+  measure: PropTypes.number,
+  title: PropTypes.string,
+  unit: PropTypes.string,
 };
 
 export default StatusCards;

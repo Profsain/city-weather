@@ -6,10 +6,10 @@ import '../styles/WeatherStatus.css';
 
 const WeatherStatus = () => {
   const weatherData = useSelector((state) => state.weather.weatherData);
-  const wind = weatherData?.wind?.speed || 'No wind';
-  const humidit = weatherData?.main?.humidity || 'Nill';
-  const visibilit = weatherData?.visibility || 'Nill';
-  const pressur = weatherData?.main?.pressure || 'Nill';
+  const wind = weatherData?.wind?.speed || 0;
+  const humidit = weatherData?.main?.humidity || 0;
+  const visibilit = weatherData?.visibility || 0;
+  const pressur = weatherData?.main?.pressure || 0;
   return (
     <div className="WeatherStatus">
       <h2>Today&apos;s Highlight</h2>

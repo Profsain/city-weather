@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders StatusCards component correctly 1`] = `
+<div
+  className="StatusCard"
+>
+  <h4
+    className="Title"
+  />
+  <p
+    className="Record"
+  >
+    <span />
+  </p>
+</div>
+`;
